@@ -3,9 +3,13 @@ import sys
 
 def main():
     input = sys.stdin.readline  # 1行ずつ高速に読み込む
-    N = int(input())
-    A = list(map(int, input().split()))
-    print(sum(A))
+    P = input().strip()
+    L = int(input())
+
+    if len(P) >= L:
+        print("Yes")
+    else:
+        print("No")
 
 
 if __name__ == "__main__":

@@ -3,9 +3,9 @@ import sys
 
 TEMPLATE = """\
 def main():
-    # TODO: Implement
-    n = int(input())
-    print(n)
+    N = int(input())
+    A = list(map(int, input().split()))
+    print(sum(A))
 
 if __name__ == "__main__":
     main()
